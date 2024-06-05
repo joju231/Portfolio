@@ -399,9 +399,9 @@ footer {
     .jeli {
         margin: 15px;
     }
-    .proyectos h1,
-    .jeli h2 {
-        font-size: 1.1em;
+    .proyectos p,
+    .jeli p {
+        font-size: 0.8em;
     }
     .proyectos hr,
     .jeli hr {
@@ -424,9 +424,9 @@ footer {
     .jeli {
         margin: 10px;
     }
-    .proyectos h1,
-    .jeli h2 {
-        font-size: 1em;
+    .proyectos p,
+    .jeli p {
+        font-size: 0.8em;
     }
     .proyectos hr,
     .jeli hr {
