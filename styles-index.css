@@ -380,3 +380,28 @@
       font-size: 0.9em;
    }
 }
+
+
+@media (max-width: 430px) {
+   header {
+      padding: 10px 10px;
+   }
+   .titulo {
+      font-size: 1em;
+   }
+   .index a {
+      font-size: 0.8em;
+      margin-left: 5px;
+   }
+   .intro p,
+   .cono p {
+      font-size: 0.8em;
+   }
+   section.intro,
+   section.cono {
+      margin: 15px;
+   }
+   footer {
+      font-size: 0.8em;
+   }
+}
