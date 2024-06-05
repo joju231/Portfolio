@@ -405,3 +405,16 @@
       font-size: 0.8em;
    }
 }
+
+@media (min-width: 1080px) and (max-width: 1200px) {
+   header {
+      padding: 20px 50px;
+   }
+   .titulo {
+      font-size: 1.8em;
+   }
+   .index a {
+      font-size: 1em;
+      margin-left: 15px;
+   }
+}
