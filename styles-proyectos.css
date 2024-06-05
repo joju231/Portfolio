@@ -1,0 +1,438 @@
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #3a2ba8;
+  }
+  50%{
+     background: #332a84;
+  }
+  100% {
+    background: #1f194d;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #3a2ba8;
+  }
+  50%{
+     background: #332a84;
+  }
+  100% {
+    background: #1f194d;
+  }
+}
+
+.color-change-2x {
+ -webkit-animation: color-change-2x 15s linear infinite alternate both;
+         animation: color-change-2x 15s linear infinite alternate both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#tracking-in-expand {
+ -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+         animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.kanit-thin {
+ font-family: "Kanit", sans-serif;
+ font-weight: 100;
+ font-style: normal;
+}
+
+.kanit-extralight {
+ font-family: "Kanit", sans-serif;
+ font-weight: 200;
+ font-style: normal;
+}
+
+.kanit-light {
+ font-family: "Kanit", sans-serif;
+ font-weight: 300;
+ font-style: normal;
+}
+
+.kanit-regular {
+ font-family: "Kanit", sans-serif;
+ font-weight: 400;
+ font-style: normal;
+}
+
+.kanit-medium {
+ font-family: "Kanit", sans-serif;
+ font-weight: 500;
+ font-style: normal;
+}
+
+.kanit-semibold {
+ font-family: "Kanit", sans-serif;
+ font-weight: 600;
+ font-style: normal;
+}
+
+.kanit-bold {
+ font-family: "Kanit", sans-serif;
+ font-weight: 700;
+ font-style: normal;
+}
+
+.kanit-extrabold {
+ font-family: "Kanit", sans-serif;
+ font-weight: 800;
+ font-style: normal;
+}
+
+.kanit-black {
+ font-family: "Kanit", sans-serif;
+ font-weight: 900;
+ font-style: normal;
+}
+
+.kanit-thin-italic {
+ font-family: "Kanit", sans-serif;
+ font-weight: 100;
+ font-style: italic;
+}
+
+.kanit-extralight-italic {
+ font-family: "Kanit", sans-serif;
+ font-weight: 200;
+ font-style: italic;
+}
+
+.kanit-light-italic {
+ font-family: "Kanit", sans-serif;
+ font-weight: 300;
+ font-style: italic;
+}
+
+.kanit-regular-italic {
+ font-family: "Kanit", sans-serif;
+ font-weight: 400;
+ font-style: italic;
+}
+
+.kanit-medium-italic {
+ font-family: "Kanit", sans-serif;
+ font-weight: 500;
+ font-style: italic;
+}
+
+.kanit-semibold-italic {
+ font-family: "Kanit", sans-serif;
+ font-weight: 600;
+ font-style: italic;
+}
+
+.kanit-bold-italic {
+ font-family: "Kanit", sans-serif;
+ font-weight: 700;
+ font-style: italic;
+}
+
+.kanit-extrabold-italic {
+ font-family: "Kanit", sans-serif;
+ font-weight: 800;
+ font-style: italic;
+}
+
+.kanit-black-italic {
+ font-family: "Kanit", sans-serif;
+ font-weight: 900;
+ font-style: italic;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap);
+
+:root{
+  --clr-title: #2373ff;
+  --clr-background: #506172;
+  --clr-header: #92a4b4;
+  --clr-secund: #1e375a;
+  --clr-text: #000000;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Kanit', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 20px 100px;
+    background: var(--clr-header);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+hr {
+    position: relative;
+    width: 150px;
+    height: 6px;
+    background-color: #dfe4ff;
+    border-color: #dfe4ff;
+    border-radius: 20px;
+}
+
+.titulo {
+    font-size: 2em;
+    color: var(--clr-secund);
+    user-select: none;
+}
+
+.index a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.index a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.index a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+body {
+    position: relative;
+    display: flexbox;
+    line-height: 1.6;
+    align-content: flex-start;
+    padding-bottom: 2.5;
+    margin-top: 150px;
+    background-color: var(--clr-background);
+    min-height: 600px;
+}
+
+p {
+    color: var(--clr-text);
+}
+
+hr {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    height: 6px;
+    background-color: #dfe4ff;
+    border-color: #dfe4ff;
+    border-radius: 6px;
+}
+
+div.proyectos {
+    margin-left: 40px;
+    width: 575px;
+}
+
+.proyectos h1 {
+    color: var(--clr-title);
+}
+
+.proyectos hr {
+    position: relative;
+    width: 125px;
+    height: 6px;
+    background-color: #dfe4ff;
+    border-color: #dfe4ff;
+    border-radius: 20px;
+}
+
+section.jeli {
+    margin-top: 50px;
+}
+
+.jeli h2 {
+    color: var(--clr-title);
+}
+
+.jeli hr {
+    position: relative;
+    width: 100px;
+    height: 6px;
+    background-color: #dfe4ff;
+    border-color: #dfe4ff;
+    border-radius: 20px;
+}
+
+.jeli a {
+    text-decoration: none;
+    color: var(--clr-title);
+}
+
+footer {
+    position: absolute;
+    padding: 1em 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    color: #ffffff;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    padding-top: 10px;
+    margin: 10px;
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding: 20px 50px;
+    }
+    .titulo {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        padding: 15px 30px;
+    }
+    .titulo {
+        font-size: 1.6em;
+    }
+    .index a {
+        font-size: 1em;
+        margin-left: 15px;
+    }
+    div.proyectos {
+        width: auto;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+    }
+    .titulo {
+        font-size: 1.4em;
+        margin-bottom: 10px;
+    }
+    .index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .index a {
+        font-size: 1em;
+        margin: 5px 0;
+    }
+    div.proyectos {
+        width: auto;
+        margin: 20px;
+    }
+    .proyectos h1,
+    .jeli h2 {
+        font-size: 1.2em;
+    }
+    .proyectos hr,
+    .jeli hr {
+        width: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 10px;
+    }
+    .titulo {
+        font-size: 1.2em;
+    }
+    .index a {
+        font-size: 0.9em;
+        margin-left: 10px;
+    }
+    .proyectos,
+    .jeli {
+        margin: 15px;
+    }
+    .proyectos h1,
+    .jeli h2 {
+        font-size: 1.1em;
+    }
+    .proyectos hr,
+    .jeli hr {
+        width: 80px;
+    }
+}
+
+@media (max-width: 430px) {
+    header {
+        padding: 10px 10px;
+    }
+    .titulo {
+        font-size: 1em;
+    }
+    .index a {
+        font-size: 0.8em;
+        margin-left: 5px;
+    }
+    .proyectos,
+    .jeli {
+        margin: 10px;
+    }
+    .proyectos h1,
+    .jeli h2 {
+        font-size: 1em;
+    }
+    .proyectos hr,
+    .jeli hr {
+        width: 60px;
+    }
+    footer {
+        font-size: 0.8em;
+    }
+}
