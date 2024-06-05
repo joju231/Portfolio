@@ -374,13 +374,12 @@ footer {
         width: auto;
         margin: 20px;
     }
-    .proyectos h1,
-    .jeli h2 {
-        font-size: 1.2em;
-    }
-    .proyectos hr,
+    .proyectos,
     .jeli hr {
         width: 100px;
+    }
+    .proyectos p {
+        width: 100%;
     }
 }
 
