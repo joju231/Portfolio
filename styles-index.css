@@ -170,9 +170,10 @@
 
  :root{
    --clr-title: #2373ff;
-   --clr-background: #92a4b4;
+   --clr-background: #506172;
    --clr-header: #92a4b4;
    --clr-secund: #1e375a;
+   --clr-text: #000000;
 }
 
 *{
