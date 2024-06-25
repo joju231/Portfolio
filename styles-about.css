@@ -1,0 +1,293 @@
+@-webkit-keyframes tracking-in-expand {
+   0% {
+     letter-spacing: -0.5em;
+     opacity: 0;
+   }
+   40% {
+     opacity: 0.6;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
+ @keyframes tracking-in-expand {
+   0% {
+     letter-spacing: -0.5em;
+     opacity: 0;
+   }
+   40% {
+     opacity: 0.6;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
+ 
+ 
+ #tracking-in-expand {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+          animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+ }
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+ :root{
+     --clr-dark: #030712;
+     --clr-slate50: #f8fafc;
+     --clr-slate100: #f1f5f9;
+     --clr-light: #e2e8f0;
+     --clr-slate300: #cbd5e1;
+     --clr-rose700: #94a3b8;
+     --clr-slate800: #1e293b;
+     --clr-rose: #e11d48;
+     --clr-rose700: #be123c;
+     --clr-blue: #2563eb;
+     --clr-muted: #7f8ea3;
+     --clr-bg: #0a101f;
+ }
+ 
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Kanit', sans-serif;
+  }
+ 
+  ::-webkit-scrollbar {
+     width: 1px;
+   }
+ 
+   header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      padding: 20px 100px;
+      background: var(--clr-dark);
+      opacity: 100%;
+      display: flex;
+      justify-content: center;
+      z-index: 99;
+   }
+
+ .index a {
+    position: relative;
+    font-size: 1.1em;
+    color: var(--clr-rose);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+ }
+
+ .index a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+ }
+
+ .index a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+ }
+
+ body {
+   position: relative;
+   margin-top: 100px;
+   display: flex;
+   padding-bottom: 2.5;
+   justify-content: center;
+   background-color: var(--clr-dark);
+   min-height: 1000px;
+}
+
+ section {
+   width: 500px;
+   margin-top: 50px;
+}
+
+h1 {
+   color: var(--clr-rose700);
+}
+
+h2 {
+   color: var(--clr-blue);
+}
+
+h3 {
+   color: var(--clr-slate100);
+}
+
+h4 {
+   color: var(--clr-slate300);
+}
+
+h5 {
+   color: var(--clr-slate100);
+}
+
+p {
+  margin-top: 10px;
+  color: var(--clr-slate300);
+}
+
+ul {
+   padding-left: 1em;
+   list-style-position: inside;
+}
+
+li {
+   color: var(--clr-slate300);
+}
+
+ div.main {  
+   width: 500px;
+   text-align: center;
+   align-items: center;
+}
+
+footer {
+   position: absolute;
+   padding: 1em 0;
+   text-align: center; 
+   bottom: 0;
+   width: 100%;
+   color: var(--clr-rose700);
+}
+
+.links a {
+  color: var(--clr-blue);
+  text-decoration: none;
+  padding-top: 10px;
+  margin: 10px;
+}
+
+  
+@media (max-width: 1200px) {
+   header {
+      padding: 20px 50px;
+   }
+   .titulo {
+      font-size: 1.8em;
+   }
+}
+
+@media (max-width: 992px) {
+   header {
+      padding: 15px 30px;
+   }
+   .titulo {
+      font-size: 1.6em;
+   }
+   .index a {
+      font-size: 1em;
+      margin-left: 15px;
+   }
+}
+
+@media (max-width: 768px) {
+   header {
+      flex-direction: column;
+      height: auto;
+      padding: 10px 20px;
+   }
+   .titulo {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+   }
+   .index {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .index a {
+      font-size: 1em;
+      margin: 5px 0;
+   }
+   section.presen,
+   section.habs,
+   section.project,
+   section.forma {
+      margin: 20px;
+      width: auto;
+   }
+   .presen p,
+   .habs p,
+   .project p,
+   .forma p {
+      width: 100%;
+   }
+}
+
+@media (max-width: 576px) {
+   header {
+      padding: 10px;
+   }
+   .titulo {
+      font-size: 1.2em;
+   }
+   .index a {
+      font-size: 0.9em;
+      margin-left: 10px;
+   }
+   .presen p,
+   .habs p,
+   .project p,
+   .forma p {
+      font-size: 0.9em;
+   }
+   footer {
+      font-size: 0.9em;
+   }
+}
+
+@media (max-width: 430px) {
+   header {
+      padding: 10px 10px;
+   }
+   .titulo {
+      font-size: 1em;
+   }
+   .index a {
+      font-size: 0.8em;
+      margin-left: 5px;
+   }
+   .presen p,
+   .habs p,
+   .project p,
+   .forma p {
+      font-size: 0.8em;
+   }
+   section.presen,
+   section.habs,
+   section.project,
+   section.forma {
+      margin: 15px;
+      width: auto;
+   }
+   footer {
+      font-size: 0.8em;
+   }
+}
+
+@media (min-width: 1080px) and (max-width: 1200px) {
+   header {
+      padding: 20px 50px;
+   }
+   .titulo {
+      font-size: 1.8em;
+   }
+   .index a {
+      font-size: 1em;
+      margin-left: 15px;
+   }
+}
+  
